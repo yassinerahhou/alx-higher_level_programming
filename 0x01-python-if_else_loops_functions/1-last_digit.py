@@ -15,4 +15,3 @@ if number > 0 or number == 0:
 else:
     print(f"Last digit of {number} is {-last_d} and is less than 6 "
           f"and not 0")
-
