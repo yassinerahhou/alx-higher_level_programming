@@ -8,6 +8,8 @@ if number > 0 or number == 0 :
     elif last_d == 0:
          print (f"Last digit of",number,"is",last_d,"and is 0")
     elif last_d <6 and last_d !=0  :
-        print( f"Last digit of",number,"is",last_d ,"and is less than 6 and not 0")
+        print( f"Last digit of",number,"is",last_d ,"and is less than 6"
+               "and not 0")
 else :
-    print( f"Last digit of",number,"is",last_d *-1,"and is less than 6 and not 0")
+    print( f"Last digit of",number,"is",last_d *-1,"and is less than 6"
+          " and not 0")
