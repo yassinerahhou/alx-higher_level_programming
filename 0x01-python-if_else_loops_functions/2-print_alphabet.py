@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-output = ""
+alphabet = ""
 for i in range(97, 123):
-    output += chr(i)
-print(output)
+    alphabet += chr(i)
+print(f"{alphabet}", end="")
