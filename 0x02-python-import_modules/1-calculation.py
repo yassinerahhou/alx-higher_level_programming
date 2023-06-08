@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-from calculator_1 import sub, mul, div ,add
+from calculator_1 import sub, mul, div, add
 if __name__ == "__main__":
-    a = 10 
+    a = 10
     b = 5
-
-    print("{} + {} = {}".format(a, b, add(a,b)))
-    print("{} - {} = {}".format(a, b, sub(a,b)))
-    print("{} * {} = {}".format(a, b, mul(a,b)))
-    print("{} / {} = {}".format(a, b, div(a,b)))
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".aformt(a, b, div(a, b)))
