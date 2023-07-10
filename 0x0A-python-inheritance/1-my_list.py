@@ -3,6 +3,8 @@
 
 
 class MyList(list):
+    """ mylist is shit
+    """
     def print_sorted(self):
         """
         Prints the sorted list in ascending order.
