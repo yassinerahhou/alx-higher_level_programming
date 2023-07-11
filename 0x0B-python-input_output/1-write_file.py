@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""write text"""
+
+
 def write_file(filename="", text=""):
     """
     Read and print the contents of a file.
