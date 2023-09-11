@@ -1,3 +1,3 @@
-#!/usr/bin/node
-const myVar = "JavaScript is amazing";
+sh: 1: q: not found
 console.log(myVar);
+
