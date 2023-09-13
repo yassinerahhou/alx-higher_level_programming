@@ -11,6 +11,6 @@ function facto (a) {
     for (i = a[2]; i > 1; i--) {
       va *= i;
     }
-  console.log(va.toFixed(0));  
+    console.log(va);
   }
 }
