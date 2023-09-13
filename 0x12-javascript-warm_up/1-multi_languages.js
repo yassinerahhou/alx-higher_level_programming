@@ -1,8 +1,4 @@
 #!/usr/bin/node
-let a = 'C is fun';
-let b = 'Python is cool';
-let c = 'JavaScript is amazing';
-console.log(a);
-console.log(b);
-console.log(c);
-
+console.log("C is fun");
+console.log("Python is cool");
+console.log("JavaScript is amazing");
