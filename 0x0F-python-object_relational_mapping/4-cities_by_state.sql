@@ -4,7 +4,6 @@
 import MySQLdb
 import sys
 
-
 def myfun():
     ar = sys.argv
 
@@ -24,5 +23,7 @@ def myfun():
 
     cur.close()
     db.close()
-    if __name__ == "__main__":
-        myfun()
+
+if __name__ == "__main__":
+    myfun()
+
