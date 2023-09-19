@@ -1,28 +1,30 @@
 #!/usr/bin/python3
-"""displays wheratches"""
+"""List All states inside hbtn_0e_0_usa db """
+
 import MySQLdb
 import sys
 
 
-def detectme():
-
-    argvv = sys.argv
-    db= MySQLdb.connect(user=argvv[1],
-                        host='localhost',
-                        port=3306,
-                        passwd=argvv[2],
-                        db=argvv[3])
+if __name__ == "__main__":
+    ar = sys.argv
+    db = MySQLdb.connect(host='localhost',
+                         user=ar[1],
+                         passwd=ar[2],
+                         db=ar[3],
+                         port=3306)
 
     cur = db.cursor()
-    cur.execute("""SELECT t2.id, t2.name, t1.name
-                    FROM cities AS t2
-                    JOIN states as t1
-                    ON t1.id = t2.state_id ORDER BY id ASC""")
+    ansr = """SELECT c.id, c.name, s.name
+                    FROM cities AS c
+                    JOIN states AS s
+                    ON c.state_id = s.id
+                    ORDER BY c.id ASC
+                """
+    cur.execute(ansr)
+
     result = cur.fetchall()
-    for i in result:
-        print(i)
+    for city in result:
+        print(city)
+
+    # cur.close()
     db.close()
-
-
-if __name__ == "__main__":
-    detectme()
