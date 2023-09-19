@@ -2,6 +2,7 @@
 
 import mysql.connector
 import sys 
+from sys import argv
 if __name__ == "__main__":
     # this block will only execute when the script is run directly.
     username = sys.argv[1]
