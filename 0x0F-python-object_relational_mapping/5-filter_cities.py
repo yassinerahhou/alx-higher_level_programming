@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""List All states inside hbtn_0e_0_usa db """
+"""List All states """
 
 import MySQLdb
 import sys
-
 
 if __name__ == "__main__":
     ar = sys.argv
@@ -24,7 +23,7 @@ if __name__ == "__main__":
     cur.execute(ansr , (ar[4],))
 
     result = cur.fetchall()
-        print(', '.join(tuple(row[0] for row in result)))
+    print(', '.join(tuple(row[0] for row in result)))
     # for city in result:
     #     print(city)
 
