@@ -20,12 +20,7 @@ if __name__ == "__main__":
                     WHERE BINARY s.name = %s
                     ORDER BY c.id ASC
                 """
-    cur.execute(ansr , (ar[4],))
+    cur.execute(ansr , (args[4],))
 
     result = cur.fetchall()
     print(', '.join(tuple(row[0] for row in result)))
-    # for city in result:
-    #     print(city)
-
-    # # cur.close()
-    # db.close()
