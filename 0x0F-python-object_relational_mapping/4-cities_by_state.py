@@ -22,8 +22,9 @@ def myfun():
     for city in result:
         print(city)
 
-    cur.close()
+    # cur.close()
     db.close()
+    
 if __name__ == "__main__":
     myfun()
 
