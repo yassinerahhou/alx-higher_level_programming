@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
-   #!/usr/bin/python3
+  from model_state import Base, State
 
+from sqlalchemy import select, create_engine
+from sqlalchemy.orm import sessionmaker
 """
 import sys
 from model_state import Base, State
