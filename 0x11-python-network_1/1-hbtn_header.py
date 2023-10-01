@@ -4,7 +4,6 @@ import urllib
 import urllib.request
 import sys
 if __name__ == "__main__":
-    
     arg = sys.argv[1]
     
     with urllib.request.urlopen(arg) as response:
